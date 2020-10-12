@@ -1,0 +1,59 @@
+.contact-page {
+  // background-image: -webkit-linear-gradient(115deg, #a683e3 50%, lightgrey 50%);
+  margin-top: 9rem;
+  color: $text-color;
+}
+
+.contact{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: $text-color;
+
+  &__item{
+    width: 40%;
+    // box-shadow: 0 .7rem 2rem $secondary-color;
+
+    @include res(tab-port){
+      width: 50%;
+    }
+    @include res(phone){
+      width: 45%;
+    }
+
+    & > a > img{
+    width: 100%;
+    }
+     
+  }
+}
+
+
+.contact-footer {
+  width: 100%;
+ 
+  &__text {
+    text-align: center;
+    background-color: rgb(27, 4, 49);
+    padding: 2rem;
+    // box-shadow: 0 .7rem 2rem $secondary-color;
+    display: block;
+    color: $text-color;
+
+  }
+
+}
+
+.contact-container{
+  margin: 0 10rem;
+
+
+  @include res(tab-port){
+    margin: 0 5rem;
+  }
+
+  @include res(phone){
+    margin: 0 1.5rem;
+  }
+}

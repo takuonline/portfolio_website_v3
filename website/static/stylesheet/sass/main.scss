@@ -1,0 +1,33 @@
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "layout/header";
+@import "layout/footer";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/buttons";
+@import "components/about";
+@import "components/blobs";
+@import "components/cubes";
+@import "components/navbar";
+@import "components/projects";
+@import "components/designs";
+@import "components/ai";
+@import "components/grid";
+
+@import "pages/newsapp-form";
+@import "pages/faceapp-form";
+@import "pages/dictapp-form";
+@import "pages/home";
+@import "pages/contact";
+@import "pages/simon";
+@import "pages/drumkit";
+@import "pages/about";
+
+ 
+ 

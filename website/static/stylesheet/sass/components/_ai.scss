@@ -1,0 +1,223 @@
+.mlx {
+    @include res(phone) {
+        font-size: 70%;
+    }
+}
+
+.ai {
+    width: 100%;
+    position: relative;
+
+    &-blob {
+        position: absolute;
+        width: 15%;
+        top: -2rem;
+        left: 10rem;
+        z-index: -1;
+
+        @include res(tab-port){
+          
+    width: 23%;
+    top: 1rem;
+    left: 13rem;
+   
+        }
+
+        @include res(phone){
+            width: 45%;
+            top: -1rem;
+    left: 9rem;
+          }
+    }
+
+    &-para {
+        margin-bottom: 7rem;
+        color: $text-color;
+
+        @include res(tab-port){
+  
+            padding: 1rem;
+          }
+        @include res(phone){
+             
+            padding: 1rem;
+          }
+    }
+
+    &__model {
+        border: 1px solid $secondary-color;
+        border-radius: .7rem;
+        position: relative;
+        padding: 1.5rem;
+
+        height: 100%;
+        overflow: hidden;
+        width: 80%;
+
+        margin: auto 7rem;
+        margin-bottom: 5rem;
+
+        @include res(tab-land) {
+            margin: auto 5rem;
+            padding: .1rem;
+        }
+
+        @include res(phone) {
+            margin: auto 2rem;
+            padding: .3rem;
+        }
+
+
+        &--header {
+            display: block;
+            text-align: center;
+            font-size: 1.5rem;
+
+
+            background-image: linear-gradient(rgba(#8d2de2, .7),
+                    rgba(#4b00e0, .7));
+
+            color: white;
+            border-radius: .7rem;
+            padding: 1rem;
+
+            @include res(phone) {
+                width: 100%;
+                padding: .4;
+            }
+        }
+
+        &--para {
+            padding: 1rem;
+            color: $text-color;
+
+            @include res(phone) {
+
+                padding: .4rem;
+            }
+        }
+
+        &--1 {
+            width: 50%;
+            position: relative;
+            left: 0;
+            top: 6;
+            padding: 1rem;
+            float: left;
+            transition: all .3s ease-out;
+
+            @include res(phone) {
+
+                padding: .7rem;
+                padding-top: .9rem;
+            }
+
+            &:hover {
+                transform: scale(1.03);
+            }
+
+
+            & a {
+
+                color: black;
+
+                &:hover {
+                    text-decoration: none;
+                    color: lightseagreen;
+                }
+            }
+
+
+            //h for header
+            &-h {
+                display: block;
+                text-align: center;
+                font-size: 1.3rem;
+                background-image: linear-gradient(rgba(#8d2de2, .7),
+                        rgba(#4b00e0, .7));
+             
+                color: white;
+                border-radius: .7rem;
+                padding: 1rem;
+                transition: all .2s ease-in;
+                @include res(phone) {
+                    font-size: 1rem;
+                    padding: 10px;
+
+                }
+
+            }
+
+            &-p {
+                padding: 1rem;
+                color: $text-color;
+                
+                @include res(phone) {
+
+                    font-size: 14px;
+                    padding: .2rem;
+
+                }
+            }
+        }
+
+        &--2 {
+            width: 50%;
+            position: relative;
+            margin-left: auto;
+            padding: 1rem;
+            transition: all .3s ease-out;
+            color: $text-color;
+
+            @include res(phone) {
+
+                padding: .7rem;
+                padding-top: .9rem;
+            }
+
+            &:hover {
+                transform: scale(1.03);
+            }
+
+
+            & a {
+                color: black;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: none;
+                    color: lightseagreen;
+                }
+            }
+
+            &-h {
+                display: block;
+                text-align: center;
+                font-size: 1.3rem;
+                background-image: linear-gradient(rgba(#8d2de2, .7),
+                        rgba(#4b00e0, .7));
+                color: $text-color;
+                border-radius: .7rem;
+                padding: 1rem;
+                @include res(phone) {
+                    font-size: 1rem;
+                    padding: 10px;
+
+                }
+
+            }
+
+            &-p {
+                padding: 1rem;
+                color: $text-color;
+
+                @include res(phone) {
+
+                    font-size: 14px;
+                    padding: .2rem;
+
+                }
+            }
+        }
+    }
+}

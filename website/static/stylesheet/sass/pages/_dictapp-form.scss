@@ -1,0 +1,39 @@
+.dictapp-form {
+    outline: .1rem solid rgba($color: #000000, $alpha: .1);
+
+    margin: 5rem auto;
+    box-shadow: 0 .3rem 1rem $secondary-color;
+    padding: 3rem;
+    color: $text-color;
+    // width: 100%;
+
+
+
+    @include res(phone) {
+        padding: 1rem;
+        margin-bottom: 2rem;
+        padding-bottom: 2rem;
+
+    }
+
+    &__input {
+        display: block;
+        width: 25%;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: .25rem;
+        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+        @include res(tab-port) {
+            width: 55%;
+        }
+        @include res(phone) {
+            width: 65%;
+        }
+    }
+}

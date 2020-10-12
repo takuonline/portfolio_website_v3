@@ -1,0 +1,794 @@
+.about {
+    margin-top: 12rem;
+    width: 100%;
+    position: relative;
+    font-size: 1rem;
+
+
+    @include res(tab-port) {
+        margin-top: 7rem;
+    }
+
+    @include res(phone) {
+        width: 100%;
+        margin-top: 0;
+        margin-right: 0;
+    }
+
+ 
+    &__profile {
+        margin-bottom: 12rem;
+        position: relative;
+
+        @include res(tab-port){
+            top: -8rem;
+            margin-bottom: 0rem;
+        }
+
+        @include res(phone) {
+            top: -5rem;
+            margin-bottom: 0rem;
+            margin-top: 7rem;
+        }
+
+        &-row {
+            position: relative;
+            width: 100%;
+            height: 100%;
+
+            @include res(phone) {
+                margin-top: 7rem;
+                
+            }
+        }
+
+        &-header {
+            animation: slide-in-header 1500ms cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+
+        &-blob {
+            position: absolute;
+            width: 15%;
+            top: -3rem;
+            left: -4rem;
+            z-index: -1;
+            transform: rotate(-152deg);
+            animation: rotate-in 500ms ease-in-out;
+
+            @include res(tab-port){
+             
+    width: 18%;
+    top: 15rem;
+    left: 0rem;
+    
+   
+ 
+            }
+
+            @include res(phone){
+               
+                width: 35%;
+                top: 17rem;
+                left: -1rem;
+            
+              
+            }
+        }
+
+
+        &--img {
+            width: 27%;
+            border-radius: .2rem;
+            
+            animation: img 1s cubic-bezier(0.85, 0, 0.15, 1);
+            position: absolute;
+            right: 0rem;
+            top: -6rem;
+
+            @include res(tab-port) {
+                width: 35%;
+                padding-left: 1rem;
+                position: relative;
+                
+
+                left: 18rem;
+                top: 8rem;
+            }
+
+            @include res(phone) {
+                width: 75%;
+                margin-bottom: 3rem;
+                position: relative;
+                top: 0rem;
+                left: 4rem;
+
+
+            }
+
+        }
+
+        &--text {
+            padding: 2rem;
+            padding-left: 0;
+
+            display: inline-block;
+            width: 55%;
+            color: $text-color;
+            padding-top: 0rem;
+            animation: fade-in 3s ease-in-out;
+
+
+            @include res(tab-port) {
+                margin: 0;
+                display: inline-block;
+                width: 100%;
+                font-size: 1rem;
+                
+                padding: 2rem;
+
+            }
+
+            @include res(phone) {
+                padding: 1rem;
+            }
+        }
+    }
+
+
+    &__coding {
+        position: relative;
+        width: 100%;
+        margin-bottom: 55rem;
+
+        &-blob {
+            position: absolute;
+            width: 15%;
+            top: -4rem;
+            left: 3rem;
+            z-index: -1;
+            transform: rotate(-152deg);
+
+            @include res(tab-port){
+                width: 20%;
+                top: 0rem;
+            }
+
+            @include res(phone){
+              
+                width: 40%;
+                top: 0rem;
+              
+                z-index: -1;
+                
+            }
+        }
+
+        // -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+        // clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+
+        &-row-ml {
+            position: relative;
+            // margin-left: 37rem;
+        }
+
+        &-row-web {
+            position: relative;
+            // margin-left: 37rem;
+        }
+
+        &-row-other {
+            position: relative;
+            // margin-left: 37rem;
+        }
+
+        &-row-mobile {
+            position: relative;
+            // margin-left: 37rem;
+            margin-top: 40rem;
+            width: 100%;
+        }
+
+
+
+        &-ml {
+            width: 30rem;
+            height: 13rem;
+            border: 2px $secondary-color solid;
+            border-radius: 1rem;
+            background-color: $secondary-color;
+            position: absolute;
+            right: -35%;
+
+            @include res(phone) {
+                width: 17rem;
+                height: 16rem;
+
+                right: -32%;
+            }
+
+
+            &-arrow {
+                transform: scale(-1, 1);
+                position: absolute;
+                right: 27rem;
+                top: 4rem;
+                width: 21%;
+
+                @include res(tab-port){
+                    right: 22rem;
+                }
+
+                @include res(phone) {
+
+                    display: none;
+
+
+                }
+            }
+
+            &::before {
+                content: "";
+                width: 30rem;
+                height: 13rem;
+                border: 4px $secondary-color solid;
+                border-radius: 1rem;
+                display: inline-block;
+                z-index: -3;
+                transform: translate(.4rem, -.8rem);
+
+                @include res(phone) {
+
+                    width: 17rem;
+                    height: 16rem;
+
+           
+
+
+                }
+            }
+
+            &-bars {
+                position: absolute;
+                top: 10rem;
+                width: 91%;
+                height: 20%;
+                margin-left: 3rem;
+
+                @include res(phone) {
+
+                    top: 13rem;
+                    left: 2rem;
+                    margin-left: 0;
+                }
+
+                &--top-bar {
+                    width: 56%;
+                    height: 20%;
+                    background-color: $tertiary-color;
+                    animation: filling-bar-ml 3s ease;
+                    animation-iteration-count: infinite;
+                }
+
+                &--bottom-bar {
+                    width: 84%;
+                    height: 20%;
+                    transform: translateY(-100%);
+                    border: 1px #333 solid;
+                }
+            }
+
+        }
+
+
+
+
+
+
+
+
+        &-web {
+            width: 30rem;
+            height: 13rem;
+            margin-top: 20rem;
+            border-radius: 1rem;
+            background-color: $tertiary-color;
+            position: absolute;
+
+            @include res(tab-port){
+                left: 2rem;
+            }
+
+
+            @include res(phone) {
+                width: 17rem;
+                height: 16rem;
+                margin-left: -1rem;
+
+               
+            }
+
+            &-arrow {
+                position: absolute;
+                right: -6rem;
+                top: 23rem;
+                transform: scale(-1, 1);
+                width: 20%;
+
+
+                @include res(tab-port){
+                    right: -9rem;
+                }
+
+                @include res(phone){
+                   
+                    display: none;
+                 
+                    
+                  }
+            }
+
+            &::before {
+                content: "";
+                width: 30rem;
+                height: 13rem;
+                border: 4px $tertiary-color solid;
+                border-radius: 1rem;
+                display: inline-block;
+                z-index: -3;
+                transform: translate(-.8rem, -0.8rem);
+
+                @include res(phone) {
+                    width: 17rem;
+                    height: 16rem;
+    
+                   
+                }
+            }
+
+
+
+            &-bars {
+                position: absolute;
+                top: 10rem;
+                width: 91%;
+                height: 20%;
+                margin-left: 3rem;
+
+                @include res(phone) {
+
+                    top: 13rem;
+                    left: 2rem;
+                    margin-left: 0;
+                }
+
+                &--top-bar {
+                    width: 67%;
+                    height: 20%;
+                    background-color: $secondary-color;
+                    animation: filling-bar-web 2000ms ease-in-out;
+                    animation-iteration-count: infinite;
+                }
+
+                &--bottom-bar {
+                    width: 84%;
+                    height: 20%;
+                    transform: translateY(-100%);
+                    border: 1px #333 solid;
+                }
+            }
+
+        }
+
+
+
+
+
+
+
+
+
+        &-mobile {
+            width: 30rem;
+            height: 13rem;
+            border: 2px $secondary-color solid;
+            border-radius: 1rem;
+            background-color: $secondary-color;
+            position: absolute;
+            right: -35%;
+
+            @include res(phone) {
+                width: 17rem;
+                height: 16rem;
+
+                right: -32%;
+            }
+
+
+            &-arrow {
+                position: absolute;
+
+                transform: scale(-1, 1);
+                width: 20%;
+               
+    left: 10rem;
+
+                top: 3rem;
+
+                @include res(tab-port){
+                    left: 5rem;
+                }
+                @include res(phone){
+                   
+                    display: none;
+                 
+                    
+                  }
+            }
+
+            &::before {
+                content: "";
+                width: 30rem;
+                height: 13rem;
+                border: 4px $secondary-color solid;
+                border-radius: 1rem;
+                display: inline-block;
+                z-index: -3;
+                transform: translate(.4rem, -.8rem);
+                @include res(phone) {
+
+                    width: 17rem;
+                    height: 16rem;
+
+            
+
+
+                }
+            }
+
+            &-bars {
+                position: absolute;
+                top: 10rem;
+                width: 91%;
+                height: 20%;
+                margin-left: 3rem;
+
+                @include res(phone) {
+
+                    top: 13rem;
+                    left: 2rem;
+                    margin-left: 0;
+                }
+
+                &--top-bar {
+                    width: 68%;
+                    height: 20%;
+                    background-color: $tertiary-color;
+                    animation: filling-bar-mobile 1500ms ease-out;
+                    animation-iteration-count: infinite;
+                }
+
+                &--bottom-bar {
+                    width: 84%;
+                    height: 20%;
+                    transform: translateY(-100%);
+                    border: 1px #333 solid;
+                }
+            }
+
+        }
+
+
+
+        &-other {
+            width: 30rem;
+            height: 13rem;
+            margin-top: 20rem;
+            border-radius: 1rem;
+            background-color: $tertiary-color;
+            position: absolute;
+
+            @include res(tab-port){
+                left: 2rem;
+            }
+
+            @include res(phone) {
+                width: 17rem;
+                height: 16rem;
+
+                right: -32%;
+            }
+
+
+            &::before {
+                content: "";
+                width: 30rem;
+                height: 13rem;
+                border: 4px $tertiary-color solid;
+                border-radius: 1rem;
+                display: inline-block;
+                z-index: -3;
+                transform: translate(-.8rem, -0.8rem);
+
+                @include res(phone) {
+
+                    width: 17rem;
+                    height: 16rem;
+
+                  
+
+
+                }
+            }
+
+
+
+            &-bars {
+                position: absolute;
+                top: 10rem;
+                width: 91%;
+                height: 20%;
+                margin-left: 3rem;
+
+                @include res(phone) {
+
+                    top: 13rem;
+                    left: 2rem;
+                    margin-left: 0;
+                }
+
+                &--top-bar {
+                    width: 60%;
+                    height: 20%;
+                    background-color: $secondary-color;
+                    animation: filling-bar-other 2500ms ease;
+                    animation-iteration-count: infinite;
+                }
+
+                &--bottom-bar {
+                    width: 84%;
+                    height: 20%;
+                    transform: translateY(-100%);
+                    border: 1px #333 solid;
+                }
+            }
+
+        }
+
+
+
+
+
+        &-stack {
+            position: absolute;
+            top: 4rem;
+            display: flex;
+            flex-wrap: wrap;
+            left: 2rem;
+
+            &-header {
+                position: absolute;
+                top: 1rem;
+                width: 100%;
+                text-align: center;
+                font-size: 95%;
+                color: $text-color;
+
+                @include res(phone) {
+
+                    top: 2rem;
+
+
+                    font-size: 93%;
+
+                }
+            }
+        }
+
+
+
+
+
+
+        &-header {
+            margin-bottom: 2rem;
+            text-transform: capitalize;
+            color: white;
+            font-size: 2rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+
+        }
+
+
+
+
+        &-items {
+            margin-top: 12rem;
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            position: relative;
+
+        }
+
+        &-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: .7rem 1rem;
+            color: $text-color;
+
+            &-img {
+
+                height: 2rem;
+
+                @include res(phone) {
+                    height: 1.2rem;
+                }
+            }
+
+            &-header {
+                @include res(phone) {
+                    font-size: 14px;
+                }
+
+            }
+
+            &:hover {
+                transform: translateY(.07rem);
+                transition: all .3s;
+                transform: scale(1.07);
+
+            }
+        }
+
+        &--text {
+            color: white;
+
+
+            &-description {
+@include res(tab-port){
+    padding: 0rem 2rem;
+}
+
+                @include res(phone) {
+                    padding: 1rem;
+                }
+            }
+        }
+
+
+
+
+
+    }
+
+
+
+    &__design {
+        position: relative;
+        width: 100%;
+        margin-bottom: 22rem;
+
+        @include res(tab-port) {
+            margin-bottom: 36rem;
+        }
+
+        &--header {
+            color: yellow;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            font-weight: 600;
+
+
+            @include res(tab-port) {
+                color: rgb(21, 173, 21);
+                font-size: 1.7rem;
+                margin-bottom: 5rem;
+                margin-top: 7rem;
+            }
+
+            @include res(phone) {
+                margin-bottom: 2rem;
+            }
+
+        }
+
+        &--img {
+            height: 40%;
+            width: 70%;
+            // background-image: linear-gradient(to right bottom, #000000a1, #2c2c2c5d), url(../static/images/deer.jpg);
+            margin-left: 21rem;
+
+            @include res(tab-port) {
+                margin-left: 14rem;
+            }
+
+            @include res(phone) {
+                height: 40%;
+                width: 84%;
+                margin-left: 5rem;
+            }
+        }
+
+        &--text {
+            display: inline-block;
+            width: 55%;
+            /* background-image: linear-gradient(to right bottom, #000000a1, #2c2c2c5d), url(../static/images/deer.jpg); */
+            height: 70%;
+            color: white;
+            background-size: cover;
+            padding: 3rem;
+            font-size: 1.1rem;
+            background-color: purple;
+            position: absolute;
+            top: 17rem;
+            left: 5rem;
+
+            @include res(tab-port) {
+                background-size: cover;
+                display: inline-block;
+                width: 100%;
+                height: 34rem;
+                margin: 0 auto;
+                padding: 2rem;
+                color: #dee2e6;
+                text-align: left;
+                -webkit-clip-path: polygon(0 8%, 100% 0%, 100% 92%, 0 100%);
+                clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0 100%);
+                width: 100%;
+                position: absolute;
+                left: 0;
+                z-index: -1;
+                border: 20px solid lightgray;
+                top: 12rem;
+            }
+
+            @include res(phone) {
+                background-size: cover;
+                width: 100%;
+                height: 33rem;
+                padding: 2rem;
+                color: #dee2e6;
+                text-align: left;
+                width: 100%;
+                position: absolute;
+                left: 0rem;
+                top: 4rem;
+                z-index: -1;
+                -webkit-clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 100%);
+                clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 100%);
+                border: 12px solid white;
+            }
+
+
+            // &:hover {
+            //     transform: translateY(.05rem);
+            //     transition: all .3s;
+            //     box-shadow: 0 .5rem 2rem black;
+            //     transform: scale(1.04);
+            // }
+
+            &-blog-btn {
+                text-decoration: underline;
+                display: inline-block;
+                padding: .4rem .6rem;
+                border-radius: .3rem;
+                font-size: 1.3rem;
+                text-align: center;
+                text-transform: capitalize;
+                margin-left: 35rem;
+
+                @include res(tab-port) {
+                    right: 7rem;
+                    bottom: 4rem;
+                    margin-left: 0;
+                }
+
+
+            }
+        }
+    }
+}

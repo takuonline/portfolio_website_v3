@@ -1,0 +1,36 @@
+{%extends "baseb.html"%}
+
+{%block content%}
+
+
+<div class="create-post-container mt-5 my-bg">
+  <form class="form-group" method="POST">
+
+   
+      {{form.hidden_tag()}}
+     
+
+      <div class="form-group">
+
+          {{form.title.label(class="form-control-label")}}
+           {{form.title(class="w-75 form-control mb-2 form-control-lg")}}
+      </div>
+
+      <div class="ml-auto form-group">
+        {{form.submit(class="btn bg-info create-post-btn text-light btn-outline-info ")}}
+   </div>
+      <div class="form-group">
+          {{form.text.label(class="form-control-label")}}
+  
+           {{form.text(class="create-post-text h-50 myform-input form-control")}}
+      </div>
+
+     
+
+      <br>
+
+  </form>
+
+</div>
+
+{%endblock%}

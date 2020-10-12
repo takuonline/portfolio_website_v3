@@ -1,0 +1,125 @@
+
+#level-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3rem;
+    margin: 5%;
+    color: #777;
+    text-align: center;
+
+    @include res(phone) {
+        font-size: 1rem;
+
+        margin: 15% 5%;
+    }
+}
+
+.container {
+    display: block;
+    width: 50%;
+    margin: auto;
+
+}
+
+.simon-btn {
+    margin: 25px;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    border: 10px solid black;
+    border-radius: 20%;
+    cursor: pointer;
+
+    @include res(phone) {
+        margin: 15px;
+        height: 80px;
+        width: 80px;
+        border: 7px solid black;
+
+    }
+}
+
+.game-over {
+    background-color: red !important;
+    opacity: 0.8;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.pressed {
+    box-shadow: 0 0 20px white;
+    background-color: grey;
+}
+
+.simon-game-bg {
+    background-color: #011F3F;
+    position: absolute;
+    top: -2rem;
+    z-index: -5;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-size: cover;
+
+}
+
+.simon-game-container {
+    margin: 10rem auto;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include res(tab-port){
+        width: 100%;
+    }
+    @include res(phone){
+        width: 100%;
+    }
+
+
+}
+
+.simon-row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    justify-content: center;
+}
+
+.game-btn {
+    background-color: purple;
+    display: inline-block;
+    border-radius: 5px;
+    transition: all .2s ease-out;
+    color: white;
+    padding: 2px 20px;
+    margin-left: 2rem;
+    margin-right: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+    cursor: pointer; 
+}   
+
+.off{
+    display: none;
+}

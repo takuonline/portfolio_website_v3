@@ -1,0 +1,19 @@
+body {
+
+  background-color: $primary-color !important;
+  font-family: "Lato", serif;
+  font-size: 1rem;
+  position: relative;
+  color: $text-color;
+
+
+  @include res(tab-port){
+    overflow-x: hidden; 
+  }
+}
+
+
+::selection{
+  background-color: purple;
+  color: white;
+}

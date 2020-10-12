@@ -1,0 +1,42 @@
+
+ {%extends"base.html" %}
+{%block content%}
+
+<body>
+  <div class="simon-game-bg">
+    <div class="simon-game-container">
+      
+  <h1 id="level-title">Press play to Start</h1>
+  <div class="game-btn" type="button"> Play!!</div>
+  <div class="container">
+    <div class="simon-row">
+
+      <div type="button" id="green" class="simon-btn green">
+
+      </div>
+
+      <div type="button" id="red" class="simon-btn red">
+
+      </div>
+    </div>
+
+    <div class="simon-row">
+
+      <div type="button" id="yellow" class="simon-btn yellow">
+
+      </div>
+      <div type="button" id="blue" class="simon-btn blue">
+
+      </div>
+
+    </div>
+
+  </div>
+<!-- jquery and javascript files -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="{{url_for('static', filename='simon_game.js')}}"></script>
+  <!-- <script src="{{url_for('static', filename='index.js')}}"></script> -->
+</div>
+</div>
+
+{%endblock%}

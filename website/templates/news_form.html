@@ -1,0 +1,62 @@
+{%extends "base.html"%}
+{%block content%}
+
+
+
+<div class="container form-container">
+
+
+  <h1 style="color: #28a745;" text-success>Real/Fake news Classifier.</h1>
+  <br>
+  <form method="post">
+
+    {{form.hidden_tag()}}
+    {{form.text.label}}
+    <br>
+    {{form.text(class="form-group w-75 h-25", rows="7" )}}
+
+    <br>
+    {{form.submit(class_="btn btn-primary",href="#news-results")}}
+  </form>
+
+
+  <div class="newsapp-form">
+    <h1 class="display-4 text-success text-center">News prediction Results </h1>
+    {% if form.validate_on_submit() %}
+
+
+    <h3 class="text-center ">Thank you for your submission</h3>
+    <hr class="w-75">
+
+    <div class="newsapp-form__result" id="news-results"> The model predicts the News article is <span
+        class=" badge-info">{{session['y']}}</span>
+    </div>
+
+    <!-- The following is the probability results of your article -->
+
+    <!-- <h3>Probability of Fake news:  {{session['proba_fake']}}</h3> -->
+
+    <!-- <h3>Probability of Real news:  {{session['proba_real']}} </h3> -->
+    <!-- <h1> {{session['proba']}}</h1> -->
+    <!-- <br> -->
+    <!-- <a href="{{url_for('news.news_app')}}"> Do you want to try again </a> -->
+    <!-- </div> -->
+
+
+  </div>
+  <!-- <br> -->
+  <ul>
+    <li>Please be advised that l do not guarantee the accuracy of this application to be a perfect. and will not take
+      any
+      responsibility for a misclassification. </li>
+    <li>
+      This app was trained on a actual news articles and was able to reach an
+      accuracy of more than 80%
+    </li>
+  </ul>
+  {%endif%}
+</div>
+
+
+
+{% endblock %}

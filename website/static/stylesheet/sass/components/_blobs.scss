@@ -1,0 +1,140 @@
+.blobs {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    max-width: 66%;
+    z-index: -4;
+    top: -44rem;
+    fill: #a683e3;
+
+
+
+    @include res(phone) {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+        z-index: -4;
+    }
+    @include res(phone) {
+        // display: none;
+        opacity: 30%;
+    }
+
+    &__blob1 {
+        opacity: 70%;
+
+        width: 100%;
+        position: absolute;
+        top: 3rem;
+        animation: blob 7s ease-in-out;
+        animation-iteration-count: infinite;
+        transition: 5s ease-out;
+        left: 29rem;
+        display: none;
+        &:not(last-child) {
+            margin-bottom: 20rem;
+        }
+
+        @include res(tab-port) {
+            position: absolute;
+            left: 20rem;
+            top: 18rem;
+        }
+
+
+        @include res(phone) {
+            opacity: 57%;
+            top: 18rem;
+            animation: blob 7s ease-in-out;
+            animation-iteration-count: infinite;
+            transition: 5s ease-out;
+            left: 0;
+        }
+    }
+
+    &__blob2 {
+        opacity: 70%;
+        width: 100%;
+        position: absolute;
+        top: 156rem;
+        right: 2rem;
+        animation: blob 7s ease-in-out;
+        animation-iteration-count: infinite;
+
+        @include res(tab-port) {
+            position: absolute;
+            top: 210rem;
+            left: 1rem;
+            right: 0rem;
+        }
+    }
+
+    &__blob3 {
+        opacity: 70%;
+        width: 100%;
+        position: absolute;
+        top: 376rem;
+        animation: blob 7s ease-in-out;
+        animation-iteration-count: infinite;
+        left: 15rem;
+        display: none;
+
+        @include res(phone) {
+            opacity: 70%;
+            width: 87%;
+            position: absolute;
+            top: 79rem;
+            animation: blob 7s ease-in-out;
+            animation-iteration-count: infinite;
+            left: 1rem;
+        }
+    }
+}
+
+
+.myblob{
+    z-index: -5;
+    position: absolute;
+    top: 2rem;
+    right: 8rem;
+    opacity: 5%;
+    animation: blob 7s ease-in-out;
+    animation-iteration-count: infinite;
+    width: 72%;
+    
+    @include res(tab-port){
+        top: 10rem;
+    }
+
+    @include res(phone){
+        top: 11rem;
+        right: 1rem;
+        opacity: 12%;
+        width: 100%;
+    }
+}
+
+
+
+
+.section-about{
+
+
+    &__blob-blue{
+      z-index: -1;
+        width: 30%;
+ 
+        position: absolute;
+        
+        top: 0rem;
+        right: 0rem;
+        overflow-x: hidden;
+        overflow: hidden;
+     
+      
+}
+}
+
+
+

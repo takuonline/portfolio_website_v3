@@ -1,0 +1,42 @@
+{%extends "baseb.html"%}
+
+{%block content%}
+<div class="myjumbo pt-5">
+  <div align="center">
+    <h1>Welcome to your home page <span class="account-name-of-user">{{current_user.username}}</span></h1>
+
+    <img src="{{url_for("static",filename="profile_pics/"+current_user.profile_image)}}" alt="Userprofile pic">
+
+
+  </div>
+
+</div>
+
+<div class="container">
+
+  <div class="account-form">
+
+
+
+    <form method="POST" action="" enctype="multipart/form-data">
+      {{form.hidden_tag()}}
+      <div class="form-group">
+        {{form.username.label(class="d-block ")}} {{form.username(class="d-block")}}
+      </div>
+      <div class="form-group">
+        {{form.email.label(class="d-block")}} {{form.email(class="d-block")}}
+      </div>
+      <div class="form-group">
+
+        {{form.picture.label(class="d-block")}} {{form.picture(class="d-block")}}
+
+        <br>
+        {{form.submit(class="d-block btn btn-primary")}}
+
+      </div>
+
+    </form>
+  </div>
+
+</div>
+{%endblock%}

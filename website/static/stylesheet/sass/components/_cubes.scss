@@ -1,0 +1,139 @@
+.cubes {
+    position: relative;
+    transition: 5s ease-out;
+    z-index: 5rem;
+    top: 200rem;
+
+    @include res(phone) {
+        transform: translateY(-50rem);
+        padding: auto 3rem;
+        width: 80%;
+        height: 80%;
+    }
+
+
+    &__cube1 {
+        width: 5rem;
+        height: 5rem;
+        transition: 5s ease-out;
+        background-image: linear-gradient(#667eeabe, #764ba2b4);
+        transform: rotate(69deg);
+        position: absolute;
+        display: none;
+        top: -70vh;
+        left: -8%;
+
+        @include res(phone) {
+            top: 690vh;
+            left: -25%;
+    
+
+        }
+
+        &:hover {
+            transform: translate(8rem, 5rem);
+
+        }
+    }
+
+    &__cube2 {
+        width: 4rem;
+        height: 4rem;
+        transition: 5s ease-out;
+        background-image: linear-gradient(#667eeabe, #764ba2b4);
+        transform: rotate(103deg);
+        position: absolute;
+        top: -370vh;
+        left: 99%;
+        display: none;
+        z-index: 7;
+
+        @include res(phone) {
+            top: 800vh;
+            left: 12%;
+            width: 3rem;
+            height: 3rem;
+
+            
+        }
+
+        &:hover {
+            transform: translate(8rem, 5rem);
+        }
+
+
+    }
+
+
+    &__cube3 {
+        width: 3rem;
+        height: 3rem;
+        transition: 4s ease-out;
+        background-image: linear-gradient(#667eeabe, #764ba2b4);
+        transform: rotate(23deg);
+        position: absolute;
+        display: none;
+        top: -400vh;
+        left: -7%;
+
+        @include res(phone) {
+            top: -31vh;
+            left: 7rem;
+            
+        }
+
+        &:hover {
+            transform: translate(8rem, 5rem);
+        }
+
+    }
+
+    &__cube4 {
+        width: 7rem;
+        height: 7rem;
+        background-image: linear-gradient(#667eeabe, #764ba2b4);
+        transform: rotate(60deg);
+        position: absolute;
+         top: 199vh;
+        left: -12%;
+        transition: 5s ease-out;
+        display: none;
+
+        @include res(phone){
+            display: none;
+        }
+
+        &:hover {
+            transform: translate(8rem, 5rem);
+
+        }
+
+
+    }
+
+    &__cube5 {
+        width: 7rem;
+        height: 7rem;
+        transition: 6s ease-out;
+        background-image: linear-gradient(#667eeabe, #764ba2b4);
+        transform: rotate(8deg);
+        position: absolute;
+         top: 99vh;
+        left: 100%;
+        display: none;
+
+        @include res(phone) {
+            top: 631vh;
+            left: 62%;
+            display: none;
+        }
+
+        &:hover {
+            transform: translate(8rem, 5rem);
+
+        }
+
+    }
+
+
+}

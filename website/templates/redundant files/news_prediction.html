@@ -1,0 +1,28 @@
+{%extends "base.html"%}
+{%block content%}
+
+
+<div class="container">
+
+<div class="jumbotron mt-5 ">
+        <h1 class="display-4 text-success text-center">News prediction </h1>
+        <h3 class="text-center pb-4 mb-5">Thank you for your submission</h3>
+
+
+
+    <h1>{{session['y']}}</h1>
+<br>
+The model is   certain the News article is 
+The following is the probability results of your article  
+
+<!-- <h3>Probability of Fake news: {{session['proba_fake']}}</h3> -->
+
+<!-- <h3>Probability of Real news: {{session['proba_real']}} </h3> -->
+<h1>   {{session['proba']}}</h1>
+<br>
+<a href="{{url_for('news.news_app')}}"> Do you want to try again </a>
+</div>
+{% endblock %}
+
+</div>
+

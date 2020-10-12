@@ -1,0 +1,293 @@
+//used in namebox name
+@keyframes appear {
+
+  0% {
+    opacity: 0;
+    transform: translateY(1rem);
+
+
+  }
+
+  100% {
+    opacity: 100%;
+  }
+
+
+
+
+
+}
+
+// apears after 1sec
+//used in namebox greeting message 
+@keyframes appear2 {
+
+  0% {
+    opacity: 0;
+    transform: translateY(1rem);
+
+
+
+  }
+
+  50% {
+    opacity: 0;
+    transform: translateY(1rem);
+
+
+  }
+
+  100% {
+    opacity: 100%;
+  }
+
+
+
+
+
+}
+
+// apears after 2secs
+//for name box description
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+
+
+
+
+  }
+
+  66% {
+    opacity: 0;
+
+
+
+  }
+
+  100% {
+    opacity: 100%;
+  }
+
+
+
+
+
+}
+
+
+// apears roughly after 3secs
+@keyframes bounce-in {
+  0% {
+    transform: scale(0);
+
+
+
+
+  }
+
+  90% {
+    transform: scale(0);
+
+
+
+  }
+
+
+  95% {
+    transform: scale(1.1);
+
+
+
+  }
+
+
+
+  100% {
+    transform: scale(1);
+
+  }
+
+
+
+
+
+}
+
+
+
+// applied to profile header blob in about page
+
+@keyframes rotate-in {
+  0% {
+    transform: translateX(12rem) rotate(159deg);
+
+  }
+
+  100% {
+    transform: translateX(0rem) rotate(-152deg);
+  }
+
+
+}
+
+
+// applied to profile header in about page
+
+@keyframes slide-in-header {
+  0% {
+    transform: translateX(12rem);
+    opacity: 0%;
+
+  }
+
+
+  50% {
+    transform: translateX(12rem);
+    opacity: 0%;
+
+  }
+
+  100% {
+    transform: translateX(0rem);
+    opacity: 100%;
+  }
+
+
+}
+
+
+
+
+
+// applied to the bar on ml stack
+@keyframes filling-bar-ml {
+  0% {
+    width: 0%;
+    opacity: 0%;
+  }
+
+
+  50% {
+    opacity: 100%;
+  }
+
+
+  100% {
+    width: 56%;
+  }
+
+}
+
+
+
+// applied to the bar on web stack
+@keyframes filling-bar-web {
+  0% {
+    width: 0%;
+    opacity: 0%;
+  }
+
+
+  50% {
+    opacity: 100%;
+  }
+
+
+  100% {
+    width: 70%;
+  }
+
+}
+
+
+
+// applied to the bar on mobile stack
+@keyframes filling-bar-mobile {
+  0% {
+    width: 0%;
+    opacity: 0%;
+  }
+
+
+  50% {
+    opacity: 100%;
+  }
+
+
+  100% {
+    width: 68%;
+  }
+
+}
+
+
+
+// applied to the bar on other stack
+@keyframes filling-bar-other {
+  0% {
+    width: 0%;
+    opacity: 0%;
+  }
+
+
+  50% {
+    opacity: 100%;
+  }
+
+
+  100% {
+    width: 60%;
+  }
+
+}
+
+@keyframes img{
+  0%{
+    transform: translateX(20rem);
+    opacity: 0;
+  }
+
+  40%{
+    transform: translateX(20rem);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0rem);
+    opacity: 1;
+  }
+}
+
+
+
+@keyframes blob {
+  0% {
+    transform: scale(1);
+    /* transform: rotate(0deg); */
+  }
+
+  25% {
+    transform: scale(1.05);
+    /* transform: rotate(15deg); */
+
+  }
+
+  50% {
+    transform: scale(1.09);
+    /* transform: rotate(30deg); */
+
+  }
+
+  75% {
+    transform: scale(1.045);
+    /* transform: rotate(15deg); */
+
+
+  }
+
+  100% {
+    transform: scale(1);
+    /* transform: rotate(0deg); */
+
+  }
+}

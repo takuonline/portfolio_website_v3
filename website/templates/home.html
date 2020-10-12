@@ -1,0 +1,728 @@
+{%extends "base.html"%}
+{%block content%}
+
+
+
+<main class="main">
+
+  <section class="section-namebox">
+    <div class="namebox">
+
+      <h1 class=" namebox__name ">Hello, l am<span class="namebox__name-colored" > Takudzwa </span>   </h1>
+      <p class=" namebox__greet">Welcome to my World!</p>
+      <hr class="my-4">
+
+      <p class="namebox__description">Apart from designing and developing website l also can do mobile development as well some machine learning. 
+        Check out my other projects below.
+        <br>
+       
+      
+        If you like anything on my site or just want to say Hi feel free to contact me. 
+        
+        </p>
+
+        <a href="{{url_for("core_app.about")}}" class="namebox__blog-btn--1">About Me</a>
+      <a href="./static/cv/Takudzwa Makusha CV.pdf" class="namebox__blog-btn--2">Download CV →</a>
+   
+      
+    </div>
+
+
+    </div>
+  </section>
+
+
+  <section class="section-blobs">
+    <div class="blobs">
+      <div class="namebox__blob-blue">
+
+      <svg viewBox="60 55 120 120" class="blobs__blob1" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M8.6,-14.7C12.1,-11.1,16.5,-10.3,30.8,-6.1C45.1,-1.9,69.3,5.8,70.6,11.5C71.8,17.1,50.1,20.8,37.5,28.8C24.9,36.8,21.4,49,13.7,55.1C6.1,61.1,-5.9,60.9,-14.6,55.7C-23.4,50.4,-28.9,40.2,-27.2,30.2C-25.5,20.3,-16.5,10.7,-18.1,2.3C-19.8,-6,-32,-13.1,-36.1,-21.6C-40.2,-30.1,-36.1,-40,-28.7,-41.8C-21.4,-43.6,-10.7,-37.4,-4.1,-31.1C2.6,-24.8,5.1,-18.3,8.6,-14.7Z"
+          transform="translate(100 100)" />
+      </svg>
+
+      <svg class="blobs__blob2" viewBox="60 55 120 120" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M21,-34C25.3,-34,25.4,-24.4,35.8,-17.1C46.1,-9.8,66.8,-4.9,66.2,-0.3C65.7,4.3,44,8.6,32.9,14.6C21.8,20.6,21.4,28.4,17.6,31.3C13.9,34.1,7,32,-0.1,32.2C-7.2,32.4,-14.4,34.8,-16.8,31.3C-19.3,27.7,-17,18.1,-16.6,11.9C-16.1,5.6,-17.6,2.8,-20.2,-1.5C-22.8,-5.8,-26.6,-11.7,-27.8,-19.2C-28.9,-26.8,-27.5,-36,-22.5,-35.6C-17.4,-35.1,-8.7,-25,-0.2,-24.7C8.4,-24.4,16.8,-34,21,-34Z"
+          transform="translate(100 100)" />
+      </svg>
+      <svg class="blobs__blob3" viewBox="35 50 120 120" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M24.6,-42.8C36.1,-36,52.5,-37.9,61.5,-32.2C70.6,-26.5,72.2,-13.3,65,-4.1C57.9,5,41.9,10,32.5,14.9C23,19.8,20,24.6,15.6,30.1C11.3,35.6,5.6,41.9,-1.7,44.8C-9,47.7,-18,47.2,-20.1,40.4C-22.3,33.6,-17.6,20.6,-22.8,12.8C-28.1,5,-43.1,2.5,-44.7,-0.9C-46.4,-4.4,-34.6,-8.8,-28.6,-15.3C-22.7,-21.9,-22.7,-30.6,-18.9,-41.8C-15.2,-53,-7.6,-66.7,-0.5,-65.8C6.6,-64.9,13.1,-49.5,24.6,-42.8Z"
+          transform="translate(100 100)" />
+      </svg>
+    </div>
+  </section>
+
+
+  <section class="section-cubes">
+    <div class="cubes">
+      <div class="cubes__cube1"></div>
+      <div class="cubes__cube2"></div>
+      <div class="cubes__cube3"></div>
+      <div class="cubes__cube4"></div>
+      <div class="cubes__cube5"></div>
+    </div>
+  </section>
+
+  <img src="../static/Asset2@3x.png" class="myblob" alt="">
+
+  <section class="section-projects">
+    <h1  data-aos="fade-right"  data-aos-delay="200" class=" section-header  "  >Project <span class="section-header-colored-secondary">Portfolio</span></h1>
+
+
+ 
+      
+<img  data-aos="fade-right"  src="../static/blob-pink.png"  class="project-portfolio-blob" alt="blob">
+ 
+
+
+    <div class="mycards">
+
+
+      <div class="card  "  data-aos-delay="500"  data-aos="zoom-in">
+
+        <div class="card__side card__side--front-1 card__side--front">
+          <h4 class="card__header">
+            <span class="card__heading-span--1 card__heading-span">Face blur app</span>
+          </h4>
+        </div>
+
+        <div class="card__side card__side--back card__side--back-1">
+          <div class="card__cta">
+            <p class="card__side-description">Built using the Opencv python library, this app can detect faces
+              and blur them </p>
+          </div>
+          <a href="{{url_for("face_app.face_blur")}}">
+            <div class="card__side-btn">
+              Try out!!
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+
+      <div class="card"  data-aos-delay="500" data-aos="zoom-in">
+
+        <div class="card__side card__side--front-2 card__side--front">
+          <h4 class="card__header">
+            <span class="card__heading-span--1 card__heading-span">Dictionary app</span>
+          </h4>
+        </div>
+
+        <div class="card__side card__side--back card__side--back-1">
+          <div class="card__cta">
+            <p class="card__side-description">A nifty dictionary application you can use to look up english
+              words </p>
+          </div>
+          <a href="{{url_for("dict.dictionary")}}">
+            <div class="card__side-btn">
+              Try out!!
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+
+      <div class="card" data-aos-delay="500"  data-aos="zoom-in">
+
+        <div class="card__side card__side--front-3 card__side--front">
+          <h4 class="card__header">
+            <span class="card__heading-span--1 card__heading-span">Drumkit App</span>
+          </h4>
+        </div>
+
+        <div class="card__side card__side--back card__side--back-1">
+          <div class="card__cta">
+            <p class="card__side-description">A drumkit application you can use play drums </p>
+          </div>
+          <a href="{{url_for("drum.drum_app")}}" class="projects__link">
+            <div class="card__side-btn">
+              Play!!
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+
+      <div class="card"  data-aos-delay="500" data-aos="zoom-in">
+
+        <div class="card__side card__side--front-4 card__side--front">
+          <h4 class="card__header">
+            <span class="card__heading-span--1 card__heading-span">Real/fake news classifier </span>
+          </h4>
+        </div>
+
+        <div class="card__side card__side--back card__side--back-1">
+          <div class="card__cta">
+            <p class="card__side-description">This Machine learning model can classify news articles in to
+              Fake or real </p>
+          </div>
+          <a href="{{url_for("news.news_app")}}">
+            <div class="card__side-btn">
+              Try out!!
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+
+      <div class="card" data-aos-delay="500"  data-aos="zoom-in">
+
+        <div class="card__side card__side--front-5 card__side--front">
+          <h4 class="card__header">
+            <span class="card__heading-span--1 card__heading-span">Simon Game</span>
+          </h4>
+        </div>
+
+        <div class="card__side card__side--back card__side--back-1">
+          <div class="card__cta">
+            <p class="card__side-description">
+              A fun little game, built in Javascript, where the player is required to repeat a sequence
+              of tones.
+
+              <br>
+              <br>
+              PS: l gave up on level 7, can you beat my high score?
+               </p>
+          </div>
+          <a href="{{url_for("simon_game.simon_app")}}">
+            <div class="card__side-btn">
+              Play!!
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+
+
+    </div>
+
+
+   
+  </section>
+
+
+
+  <section class="section-ai">
+    <h1 class="section-header" data-aos="fade-left"  data-aos-delay="200" > <span class="section-header-colored-tertiary">Machine</span> learning  </h1>
+<img src="../static/blob-blue.png" data-aos="fade-left"    class="ai-blob" alt="blue blob">
+    <div  data-aos-delay="600"  data-aos="zoom-in" class="ai-para">
+
+      <p>Welcome to the Machine learning section.
+        This is a collection of all my Jupyter notebook files
+
+        <p>In this section l have compiled some of the projects that l have done in the past that have something
+          to do with Machine learning, data science and AI. </p>
+        <p>You will find the links to each of the projects below </p>
+
+    </div>
+    <div class="ai">
+
+
+
+
+
+
+
+
+
+
+
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+                 
+
+
+            <div class="ai__model">
+              <div class="ai__model--header">Logistic regression</div>
+              <div class="ai__model--para">One of the first types of models l ever did was the Logistic regression.
+                You can check out the Jupyter notebook files below.
+              </div>
+      
+              <div class="ai__model--1">
+                <a href="{{url_for("ml_files.titanic")}}" class="#">
+                  <div class="ai__model--1-h">Titanic dataset</div>
+                  <div class="ai__model--1-p">This is a very famous data set and was one on my first
+                    first steps into machine learning!
+                    l'll be trying to classify members of the titanic crew into two classes, that is
+                    survival or deceased.
+                    This dataset is hosted directly on Kaggle.</div>
+                </a>
+              </div>
+      
+              <div class="ai__model--2">
+                <a href="{{url_for("ml_files.log_project")}}" class="#">
+                  <div class="ai__model--2-h">Logistic Project</div>
+                  <div class="ai__model--2-p">
+                    In this project l was working with advertising data and trying to create a
+                    model that will predict
+                    whether or not customers will click on an ad based off the features of that user
+      
+                    Pretty cool, right??</div>
+                </a>
+              </div>
+            </div>
+
+
+
+          </div>
+          <div class="carousel-item">
+              
+
+  <!-- Supervised  -->
+
+  <div class="ai__model">
+    <div class="ai__model--header">Supervised learning</div>
+    <div class="ai__model--para">Supervised learning is the machine learning
+      task of learning a function that maps an input to an output based on
+      example input-output pairs </div>
+
+    <div class="ai__model--1">
+      <a href="{{url_for("ml_files.forest_project")}}" class="#">
+        <div class="ai__model--1-h">Random Forest and Decision trees Project</div>
+        <div class="ai__model--1-p">
+          Creating a model that will help
+          predict whether a person will pay back money borrowed or not. This information
+          is very useful to investors as they
+          would want to invest in people who showed a profile of having a high pro
+          bability of paying you back.
+        </div>
+      </a>
+    </div>
+
+    <div class="ai__model--2">
+      <a href="{{url_for("ml_files.svm_project")}}" class="#">
+        <div class="ai__model--2-h">SVM Project</div>
+        <div class="ai__model--2-p">This model is based on the famous Iris dataset.
+          l will create a model that can classify given data into either one of 3 different iris flowers.
+        </div>
+      </a>
+    </div>
+  </div>
+
+
+
+
+          </div>
+
+
+
+          <div class="carousel-item">
+            <!-- NLP -->
+
+      <div class="ai__model">
+        <div class="ai__model--header">Natural Language Processing</div>
+        <div class="ai__model--para">This is one of my favourite uses of machine learning.
+          It can be used in a lot of ways and the examples
+          below are just the tip of the iceberg
+        </div>
+
+
+
+        <div class="ai__model--1">
+          <a href="{{url_for("ml_files.nlp")}}" class="#">
+            <div class="ai__model--1-h">Spam/non-spam messege classifier</div>
+            <div class="ai__model--1-p">
+              Here l try to create a model that can classify text messages
+              messages into spam and "Ham".
+              The reason why you dont receive too many spam messages in your
+              inbox or email account these days is mostly because of nlp classifiers.
+
+            </div>
+          </a>
+        </div>
+
+        <div class="ai__model--2">
+          <a href="{{url_for("ml_files.nlp_project")}}" class="#">
+            <div class="ai__model--2-h">NLP Project- Yelp reveiw data</div>
+            <div class="ai__model--2-p">
+              Here l create a model based on Yelp review data to try and determine whether a
+              review is 1/5 star(s).
+            </div>
+          </a>
+        </div>
+      </div>
+          </div>
+
+
+          <div class="carousel-item">
+             <!-- Recommender systems -->
+
+      <div class="ai__model">
+        <div class="ai__model--header">Recommender Systems</div>
+        <div class="ai__model--para"> Have you ever wondered how Netflix is able to some
+          degree of accuracy "Recommend" a good movie for you.
+          We have all encountered one or more uses of the recomender systems in our
+          lifes. Below you will find a simple implementaion of a recommender systems</div>
+
+    
+
+        <div class="ai__model--1">
+          <a href="{{url_for("ml_files.recommender")}}">
+            <div class="ai__model--1-h">Movie Recommender</div>
+            <div class="ai__model--1-p">
+              A model than can recommend movies for you
+              based on what movies you like</div>
+          </a>
+        </div>
+
+        <div class="ai__model--2">
+          <a href="#" class="#">
+            <div class="ai__model--2-h">&nbsp;</div>
+            <div class="ai__model--2-p">More to come soon... </div>
+          </a>
+        </div>
+      </div>
+          </div>
+
+          <div class="carousel-item">
+             <!-- Deep learning -->
+      <div class="ai__model">
+        <div class="ai__model--header">Deep learning</div>
+        <div class="ai__model--para">Deep learning is a subset of machine learning in
+          artificial intelligence (AI) that has networks capable of learning
+          unsupervised from data that is
+          unstructured or unlabeled. Also known as deep neural
+          learning or deep neural network</div>
+
+       
+
+        <div class="ai__model--1">
+          <a href="{{url_for("ml_files.tf")}}" class="">
+            <div class="ai__model--1-h">Tensorflow</div>
+            <div class="ai__model--1-p">Using the iris dataset again, this time on a deep learning model</div>
+          </a>
+        </div>
+
+        <div class="ai__model--2">
+          <a href="#" class="#">
+            <div class="ai__model--2-h">&nbsp;</div>
+            <div class="ai__model--2-p">More to come soon...</div>
+          </a>
+        </div>
+      </div>
+          </div>
+
+          <div class="carousel-item">
+           <!-- Unsupervised -->
+      <div class="ai__model">
+        <div class="ai__model--header">Unsupervised</div>
+        <div class="ai__model--para">
+          Unsupervised learning is a machine learning technique,
+          where you do not need to supervise the model.
+          Instead, you need to allow the model to work on its own
+          to discover information.
+        </div>
+
+       
+
+        <div class="ai__model--1">
+          <a href="{{url_for("ml_files.k_means_project")}}" class="#">
+            <div class="ai__model--1-h">K-means clustering</div>
+            <div class="ai__model--1-p">Given just a set of features,
+              a model is created to attempt to use KMeans Clustering to cluster Universities into two groups, Private
+              and Public.
+
+            </div>
+          </a>
+        </div>
+
+        <div class="ai__model--2">
+          <a href="{{url_for("ml_files.pca")}}" class="#">
+            <div class="ai__model--2-h">Principal component analysis</div>
+            <div class="ai__model--2-p"> A demostration of how the PCA
+              can be used to reduce the number of features to a given data set whilst keeping the
+              infomation intacked </div>
+          </a>
+        </div>
+      </div>
+          </div>
+ 
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+    
+
+    
+ 
+
+
+
+
+
+    </div>
+
+
+
+  </section>
+
+
+
+  <!-- <section class="section-about">
+    <div class="about" id="about">
+      <div class="about__pic"></div>
+
+      <h1 class="about__header">About Me</h1>
+
+      <div class="about__profile">
+        <img class="about__profile--img" src="../static/pic_clipped.png" alt="Profile pics">
+        <div class="about__profile--text">
+          <h3 class="text-success">Profile</h3>
+          <p>Self-motivated university student with a record of academic and extracurricular success studying Bcom
+            Financial
+            Accounting and critical experience in technology.</p>
+          <p>And when I am not working with numbers, I would be coding out a program or doing some graphics designing
+            works.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="about__coding">
+        <div class="about__coding--img">
+        </div>
+          <div class="about__coding--text">
+            <div class="about__coding--text-header">Coding</div>
+            <div class="about__coding--text-description">
+              <p>In my spare time l decided to take in upon myself to learn how to code and l am very 
+                proud of my progress.
+                l am :</p>
+              <ul>
+                <li>Machine learning and Data sciences(Supervised, unsupervised and deep learning)</li>
+                <li>Web development(React, Node, Flask, Express) </li>
+                <li>Sql</li>
+                <li>GUI development(PySide)</li>
+                <li>Mobile App development(Flutter)</li>
+               
+              </ul>
+             <p>i intend to add more to my skill set in the near future</p>
+            </div>
+          </div>
+
+
+ 
+
+
+
+
+
+      </div>
+
+      
+
+      <div class="about__coding-items">
+        <h3 class="about__coding-stack-header">Machine learning</h3>
+        <div class="about__coding-stack">
+
+          <div class="about__coding-item">
+            <img src="../static/skills-icons/py-icon.png" alt="icon" class="about__coding-item-img">
+            <div class="about__coding-item-header">Python</div>
+          </div>
+
+          <div class="about__coding-item">
+            <img src="../static/skills-icons/tf-icon.png" alt="icon" class="about__coding-item-img">
+            <div class="about__coding-item-header">Tensorflow</div>
+          </div>
+
+          <div class="about__coding-item">
+            <img src="../static/skills-icons/keras-icon.png" alt="icon" class="about__coding-item-img">
+            <div class="about__coding-item-header">Keras </div>
+          </div>
+
+          <div class="about__coding-item">
+            <img src="../static/skills-icons/sklearn-icon.png" alt="icon" class="about__coding-item-img">
+            <div class="about__coding-item-header">Sci-learn</div>
+          </div>
+
+        </div>
+
+        <h3 class="about__coding-stack-header">Web development</h3>
+        <div class="about__coding-stack">
+
+
+          <div class="about__coding-item">
+            <img src="../static/skills-icons/flask-icon.png" alt="icon" class="about__coding-item-img">
+            <div class="about__coding-item-header">Flask</div>
+          </div>
+
+          <div class="about__coding-item">
+            <img src="../static/skills-icons/css-icon.png" alt="icon" class="about__coding-item-img">
+            <div class="about__coding-item-header">CSS</div>
+          </div>
+
+          <div class="about__coding-item">
+            <img src="../static/skills-icons/html-icon.png" alt="icon" class="about__coding-item-img">
+            <div class="about__coding-item-header">HTML</div>
+          </div>
+
+          <div class="about__coding-item">
+            <img src="../static/skills-icons/js-icon.png" alt="icon" class="about__coding-item-img">
+            <div class="about__coding-item-header">Javascript</div>
+          </div>
+
+          <div class="about__coding-item">
+            <img src="../static/skills-icons/bs4-icon.png" alt="icon" class="about__coding-item-img">
+            <div class="about__coding-item-header">Bootstrap 4</div>
+          </div>
+
+
+        </div>
+
+        <h3 class="about__coding-stack-header">Other technologies</h3>
+        <div class="about__coding-stack">
+
+
+          <div class="about__coding-item">
+            <img src="../static/skills-icons/java-icon.png" alt="icon" class="about__coding-item-img">
+            <div class="about__coding-item-header">Java</div>
+          </div>
+
+          <div class="about__coding-item">
+            <img src="../static/skills-icons/node-icon.png" alt="icon" class="about__coding-item-img">
+            <div class="about__coding-item-header">Node</div>
+          </div>
+
+          <div class="about__coding-item">
+            <img src="../static/skills-icons/github-icon.png" alt="icon" class="about__coding-item-img">
+            <div class="about__coding-item-header">Github</div>
+          </div>
+
+
+        </div>
+
+        <h3 class="about__coding-stack-header">Mobile App development</h3>
+        <div class="about__coding-stack">
+
+          <div class="about__coding-item">
+            <img src="../static/skills-icons/dart-icon.png" alt="icon" class="about__coding-item-img">
+            <div class="about__coding-item-header">Dart</div>
+          </div>
+
+          <div class="about__coding-item">
+            <img src="../static/skills-icons/flutter-icon.png" alt="icon" class="about__coding-item-img">
+            <div class="about__coding-item-header">Flutter</div>
+          </div>
+
+        </div>
+
+      </div>
+      
+
+      <div class="about__design">
+        
+        <div >  <img  class="about__design--img" src="../static/images/deer.jpg" alt="About section designs"></div>
+          <div class="about__design--text">
+            <div class="about__design--header">Designing</div>
+            <p>Besides coding l also love graphics designing works and motion graphics. For this l use the following
+              software:
+            </p>
+            <ul>
+              <li>Adobe Photoshop</li>
+              <li>Illustrator</li>
+              <li>After effects</li>
+              <li>And PowerPoint</li>
+            </ul>
+          </div>
+        
+
+        
+      </div>
+  </section> -->
+
+<!-- 
+  <section class="section-designs">
+
+    <div class="designs">
+      <img src="../static/Adobe_pics/cute.png" alt="Image 1" class="designs__img designs__img--1">
+      <img src="../static/Adobe_pics/splash.png" alt="Image 4" class="designs__img designs__img--2">
+      <img src="../static/Adobe_pics/glitch.png" alt="Image 3" class="designs__img designs__img--3">
+      <img src="../static/Adobe_pics/grow.png" alt="Image 2" class="designs__img designs__img--4">
+      <img src="../static/Adobe_pics/splash2.png" alt="Image 5" class="designs__img designs__img--5">
+    </div>
+
+  </section> -->
+
+
+
+
+</main>
+<footer class="my-footer">
+
+  <ul class="my-footer__list-1">
+    <li class="f-item">   <p> Made with 💖 by Takudzwa Makusha</p>  </li>
+     <li class="f-item">  <p>©Copyright 2020. All rights reserved</p>   </li>
+    
+  </ul>
+
+
+  <ul class="my-footer__list-4">
+    <a href="https://www.facebook.com/takudzwa.makusha.3"> <img  class="f-icon"  src="../static/contact_icons/Asset 1fb.png" alt=""></a>
+    <a  href="https://twitter.com/takuonline"> <img class="f-icon" src="../static/contact_icons/Asset 2twitter.png" alt=""></a>
+    <a  href="https://www.instagram.com/takuonline3/"> <img class="f-icon" src="../static/contact_icons/Asset 3inst.png" alt=""></a>
+    <a  href="whatsapp://send?text=Hey, l just visited your site!&phone=+27676522180"> <img class="f-icon" src="../static/contact_icons/Asset 4app.png" alt=""></a>
+    <a  href="https://www.linkedin.com/in/takudzwa-makusha-560762187/"> <img class="f-icon" src="../static/contact_icons/Asset 5in.png" alt=""></a>
+    <a  href="mailto:tbmakusha@gmail.com"> <img class="f-icon" src="../static/contact_icons/Asset 6google.png" alt=""></a>
+     </ul>
+  
+
+  <ul class="my-footer__list-2">
+    <li class="f-item"><a href="{{url_for("core_app.contact")}}">Contact</a></li>
+    <li class="f-item"><a href="{{url_for("core.index")}}">My Blog</a></li>
+    <li class="f-item"><a href="{{url_for("core_app.about")}}">About me</a></li>
+  </ul>
+
+ 
+
+  <ul class="my-footer__list-3">
+    <p class="f-item-1">Special thanks to:</p>
+    <li class="f-item-1">Jose Portilla</li>
+    <li class="f-item-1">Angela Yu </li>
+    <li class="f-item-1">Jonas Schmedtmann</li>
+    <li class="f-item-1">Cristian Doru Barin</li>
+    <li class="f-item-1">Pixabay</li>
+    <p>"Robots lovingly delivered by Robohash.org" </p>
+  </ul>
+
+ 
+
+</footer>
+{% endblock %}

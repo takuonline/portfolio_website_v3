@@ -1,0 +1,446 @@
+.mynavbar {
+    display: flex;
+    width: 79%;
+    font-size: 1.2rem;
+    background-color: transparent;
+    margin: 2rem auto;
+    align-items: baseline;
+    color: $primary-color;
+
+    @include res(tab-port) {
+        display: none;
+    }
+
+    &-link>a {
+        color: $text-color;
+    }
+
+
+
+    &__list {
+        list-style: none;
+        display: flex;
+        overflow: hidden;
+        font-weight: 400;
+        position: relative;
+        padding: 1rem 0;
+        font-size: 1rem;
+
+
+
+
+
+        &-navbar-item {
+
+            // decoration for the line that comes up when you hover
+            &::before {
+                // content: "";
+                // position: absolute;
+                // bottom: 1rem;
+                // height: 3px;
+                // width: 3px;
+                // background-color: $secondary-color;
+                // transform: scaleX(0);
+                // transition: transform .2s,
+                //     width .2s cubic-bezier(1, 0, 0, 1) .2s,
+                //     background-color .1s;
+
+
+                content: "";
+                position: absolute;
+                bottom: 1rem;
+                height: 3px;
+                width: 3px;
+                background-color: $secondary-color;
+                transform: scaleX(0);
+                transition: transform 0.2s, width 0.2s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s;
+                // left: 31px;
+
+
+
+
+
+
+
+
+
+            }
+
+
+
+
+
+            &:link {
+                color: white;
+                text-decoration: none;
+                margin: 0px .4rem;
+                padding: 2rem;
+                color: white;
+            }
+
+            // they each require separete widths
+            &--1:hover::before {
+                transform: scaleX(1);
+                width: 3.3rem;
+            }
+
+            &--2:hover::before {
+                transform: scaleX(1);
+                width: 5.3rem;
+            }
+
+            &--3:hover::before {
+                transform: scaleX(1);
+                width: 4.5rem;
+            }
+
+        }
+
+    }
+}
+
+
+
+
+
+
+.navbar-item {
+
+
+    &:before {
+        content: "";
+        position: absolute;
+        bottom: 0.85rem;
+        height: 3px;
+        width: 3px;
+        background-color: orange;
+        transform: scaleX(0);
+        transition: transform .2s,
+            width .2s cubic-bezier(1, 0, 0, 1) .2s,
+            background-color .1s;
+    }
+
+    &:link {
+        color: $text-color !important;
+        text-decoration: none;
+        margin: 0px 1rem;
+        padding: 2rem;
+    }
+
+
+
+    &--1:hover::before {
+        transform: scaleX(1);
+        width: 3.3rem;
+    }
+
+    &--2:hover::before {
+        transform: scaleX(1);
+        width: 5.3rem;
+    }
+
+    &--3:hover::before {
+        transform: scaleX(1);
+        width: 4.5rem;
+
+    }
+
+}
+
+
+
+.logo {
+    margin-right: auto;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    color: $text-color;
+    transition: all .2s ease-in;
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+        color: $secondary-color;
+
+    }
+}
+
+
+
+
+
+.nav-myblog {
+
+    display: inline-block;
+    border: 3px $tertiary-color solid;
+    border-radius: 5px;
+    transition: all .2s ease-out;
+    color: $text-color;
+    padding: 4px 13px;
+    margin-left: 2rem;
+    margin-right: 1rem;
+    text-decoration: none;
+    transform: translateY(-15%);
+
+    &:hover {
+        border-radius: 5px;
+        color: white;
+        transform: translateY(-.1rem);
+        border: 3px $secondary-color solid;
+        text-decoration: none;
+    }
+}
+
+
+
+.c-nav {
+    display: none;
+
+    @include res(tab-port) {
+        display: block;
+
+
+        &__checkbox {
+            display: none;
+        }
+
+        &__button {
+            background-color: white;
+            height: 5rem;
+            width: 5rem;
+            position: fixed;
+            top: 4rem;
+            right: 4rem;
+            border-radius: 50%;
+            z-index: 102;
+            box-shadow: 0 .2rem .5rem #111;
+            text-align: center;
+            cursor: pointer;
+
+            @include res(phone) {
+                top: 3rem;
+                right: 3rem;
+                height: 4rem;
+                width: 4rem
+            }
+        }
+
+        //background with color purple
+        &__background {
+            top: 4.5rem;
+            right: 4.5rem;
+            border-radius: 50%;
+            position: fixed;
+            width: 3rem;
+            height: 3rem;
+            background-image: radial-gradient(#8d2de2,
+                    #4b00e0); //$c-blue-light, $c-blue-dark);
+            z-index: 100;
+            transition: transform .8s cubic-bezier(.86, 0, .07, 1);
+
+
+            @include res(phone) {
+                top: 3.5rem;
+                right: 3.5rem;
+            }
+        }
+
+        //initially nav bar must have a width of 0 to hide it
+        &__nav {
+            height: 100vh;
+            width: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 101;
+            opacity: 0;
+            visibility: hidden;
+            transition: all .8s;
+
+
+        }
+
+        &__item {
+            margin: .7rem;
+            display: block;
+
+
+
+            @include res(phone) {
+                margin: none;
+                padding: none;
+                width: 100%;
+            }
+        }
+
+        &__list {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            list-style: none;
+            text-align: center;
+            width: 100%;
+            height: fit-content;
+
+            @include res(phone) {
+                margin-bottom: 2rem;
+
+            }
+
+        }
+
+
+        &__link {
+
+            &:link,
+            &:visited {
+                font-size: 1.5rem;
+                font-weight: 300;
+                padding: 1rem 2rem;
+                color: white;
+                text-decoration: none;
+                text-transform: uppercase;
+                background-image: linear-gradient(120deg, transparent 50%, white 50%);
+                background-size: 230%;
+                transition: all .4s;
+                display: inline-block;
+
+                @include res(phone) {
+                    padding: none;
+                    background-size: 300%;
+                    font-size: 1.3rem;
+                    width: 120%;
+                }
+
+                span {
+                    margin-right: 1.5rem;
+                    display: inline-block;
+
+
+                    @include res(phone) {
+                        display: none;
+                    }
+                }
+
+            }
+
+            &:hover,
+            &:active {
+                background-position: 100%;
+                color: $c-blue-light;
+                transform: translateX(1rem);
+            }
+
+        }
+
+        &__checkbox:checked~&__background {
+            transform: scale(80);
+        }
+
+        //expand navbar width to show it when hidden check box is clicked on 
+
+        &__checkbox:checked~&__nav {
+            width: 100%;
+            opacity: 1;
+            visibility: visible;
+        }
+
+        ////icon
+
+        &__icon {
+            position: relative;
+            margin-top: 2.5rem;
+
+
+
+            & {
+                width: 2rem;
+                height: .16rem;
+                background-color: rgb(80, 80, 80);
+                display: inline-block;
+
+
+                @include res(phone) {
+                    height: .12rem;
+                    top: -0.45rem;
+                    width: 2rem;
+
+                }
+            }
+
+            &::before,
+            &::after {
+                width: 2rem;
+                height: .14rem;
+                background-color: rgb(80, 80, 80);
+                display: inline-block;
+
+
+                @include res(phone) {
+                    width: 2rem;
+
+                }
+
+            }
+
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                transition: all .2s;
+
+            }
+
+            &::before {
+                top: -.6rem;
+
+            }
+
+            &::after {
+                top: .6rem;
+
+            }
+
+        }
+
+        //still important
+
+        // &__button:hover &__icon::before {
+        //     top: -1.2rem;
+        // }
+
+        // &__button:hover &__icon::after {
+        //     top: 1.2rem;
+        // }
+
+        &__checkbox:checked+&__button &__icon {
+            background-color: transparent;
+        }
+
+        &__checkbox:checked+&__button &__icon::after {
+            top: 0;
+            transform: rotate(135deg);
+        }
+
+        &__checkbox:checked+&__button &__icon::before {
+            top: 0;
+            transform: rotate(-135deg);
+            ;
+        }
+    }
+}
+
+//work with javascript to close the colapsing nav bar
+
+.drop-bg {
+    transform: scale(1) !important;
+}
+
+.close-nav {
+    width: 0 !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+
+}

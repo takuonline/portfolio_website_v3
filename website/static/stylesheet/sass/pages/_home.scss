@@ -1,0 +1,112 @@
+
+
+.section-header{
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 3.5rem;
+
+
+  @include res(tab-port){
+    padding: 2rem;
+    padding-bottom: 0;
+  }
+
+  @include res(phone){
+    font-size:2rem ;
+    padding: 1rem;
+  }
+
+
+
+
+  &-colored-secondary{
+    color: $secondary-color;
+  }
+
+  &-colored-tertiary{
+    color: $tertiary-color;
+  }
+
+}
+
+
+.section-namebox {
+  display: block;
+  padding-bottom: 4rem;
+  padding-left: 0;
+  padding-right: 6rem;
+  padding-top: 4rem;
+  margin-bottom: 15rem;
+
+  @include res(tab-port) {
+    padding-left: 1rem;
+  }
+
+  @include res(phone) {
+    padding: 1rem;
+    margin-top: 3rem;
+
+  }
+}
+
+.section-blobs {
+  @include res(tab-port) {}
+}
+
+.section-cubes {
+  @include res(tab-port) {}
+}
+
+.section-projects {
+  padding-left: 0;
+  position: relative;
+
+  margin-top: 5rem;
+
+  @include res(tab-port) {
+    padding-left: 1rem;
+    margin-top: 5rem;
+
+  }
+}
+
+.section-ai {
+  margin: 7rem auto;
+  position: relative;
+
+  @include res(tab-port) {
+
+    padding: .7rem;
+  }
+
+  @include res(phone) {
+    margin-top: 15rem;
+    padding: .2rem;
+  }
+
+}
+
+.section-about {
+  margin: 3rem auto;
+  margin-bottom: 10rem;
+  // overflow-x: hidden;
+}
+
+.section-designs {
+  position: relative;
+  margin-bottom: 15rem;
+
+  @include res(tab-port) {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 15rem;
+  }
+
+  @include res(phone) {
+    margin-bottom: 10rem;
+  }
+}
+
+
+

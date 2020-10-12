@@ -1,0 +1,45 @@
+{%extends"base.html" %}
+{%block content%}
+
+<!-- <!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Drum Kit</title>
+  <!-- <link rel="stylesheet" href="drum_styles.css"> -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet"> -->
+</head> -->
+
+
+<div class="drum-kit-bg">
+<div class="drum-kit-container">
+  
+  
+  <h1 id="title">Drum 🥁 Kit   </h1>
+  <div class="text">
+    <p>Are you ready to rock!!</p>
+   <p>Use your keyboard/mouse and unleash your inner drummer.🤩🎼</p>
+  </div>
+  <div class="set">
+    <button class="w drum">w</button>
+    <button class="a drum">a</button>
+    <button class="s drum">s</button>
+    <button class="d drum">d</button>
+    <button class="j drum">j</button>
+    <button class="k drum">k</button>
+    <button class="l drum">l</button>
+  </div>
+
+
+  <footer class="drum-footer">
+    Made with ❤️ by Taku
+  </footer>
+  <script src="{{url_for('static', filename='index.js')}}"></script>
+
+</div>
+</div>
+<!-- 
+</html> -->
+
+{%endblock%}

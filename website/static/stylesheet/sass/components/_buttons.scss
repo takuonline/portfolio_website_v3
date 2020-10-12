@@ -1,0 +1,16 @@
+.blog-btn {
+  text-decoration: underline;
+  display: inline-block;
+  padding: .4rem .6rem;
+  border-radius: .3rem;
+  font-size: 1.3rem;
+  text-align: center;
+  &:hover {
+    background-color: rgb(76, 177, 245);
+    transform: translateY(-.07rem);
+    transition: all .2s;
+    font-weight: 300;
+    color: white;
+  }
+}
+
