@@ -11,6 +11,14 @@
   align-items: center;
   color: $text-color;
 
+
+  &__text{
+@include res(phone){
+  font-size: 1rem;
+  padding: 0rem 1rem;
+}
+  }
+
   &__item{
     width: 40%;
     // box-shadow: 0 .7rem 2rem $secondary-color;

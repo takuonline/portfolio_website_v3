@@ -1,6 +1,4 @@
-
-
-.project-portfolio-blob{
+.project-portfolio-blob {
     width: 15%;
     top: -4rem;
     z-index: -1;
@@ -8,16 +6,16 @@
     transform: rotate(-64deg);
     position: absolute;
 
-    @include res(tab-port){
+    @include res(tab-port) {
         top: 1rem;
     }
 
-    @include res(phone){
+    @include res(phone) {
         width: 45%;
-    top: -2rem;
-    
+        top: -2rem;
+
     }
- 
+
 
 }
 
@@ -29,7 +27,8 @@
     -moz-perspective: 150rem;
     position: relative;
     margin-bottom: 3rem;
-    margin-right: 3rem; 
+    margin-right: 3rem;
+    border: 1px solid rgba(0, 0, 0, 0) !important;
 
     height: 25rem;
     width: 17rem;
@@ -37,11 +36,10 @@
     display: -ms-flexbox;
     display: inline-block;
     -ms-flex-direction: column;
-    
     margin-top: 3rem;
-    border: none;
 
-    @include res(phone){
+
+    @include res(phone) {
         margin-bottom: 0;
         margin-top: 2rem;
     }
@@ -58,39 +56,43 @@
         backface-visibility: hidden;
         border-radius: 10px;
         overflow: hidden;
-        
 
-        @include res(phone){
+
+        @include res(phone) {
             height: 22rem;
-    width: 15rem;
+            width: 15rem;
 
         }
 
         &--front-1 {
             background-image: linear-gradient(#8d2de265,
                     #4b00e06b), url("../static/images/ai2.jpg");
- 
+
         }
+
         &--front-2 {
             background-image: linear-gradient(#8d2de265,
                     #4b00e06b), url(../static/images/dictionary.jpg);
-       
+
 
         }
+
         &--front-3 {
             background-image: linear-gradient(#8d2de265,
                     #4b00e06b), url(../static/drum-kit/images/tom1.png);
- 
+
         }
+
         &--front-4 {
             background-image: linear-gradient(#8d2de265,
                     #4b00e06b), url(../static/images/robot.jpg);
- 
+
         }
+
         &--front-5 {
             background-image: linear-gradient(#8d2de265,
                     #4b00e06b), url(../static/images/simon-game.jfif);
- 
+
         }
 
         &--back {
@@ -101,7 +103,7 @@
                         #4b00e0);
             }
 
-        
+
         }
 
         &-btn {
@@ -116,28 +118,28 @@
             font-weight: 300;
 
             position: absolute;
-            bottom:5rem;
+            bottom: 5rem;
             left: 5rem;
             border: 3px solid $secondary-color;
             border-radius: 7px;
             color: white;
             transition: all .2s;
 
-            &> a{
+            &>a {
                 color: white;
 
-                &:hover{
+                &:hover {
                     color: rgb(224, 224, 224);
                 }
             }
 
-            &:hover{
+            &:hover {
                 transform: scale(1.05);
             }
 
         }
 
-        &-description{
+        &-description {
             color: white;
             margin-bottom: 9rem;
             padding: 2rem 1rem;
@@ -166,7 +168,7 @@
         padding: 2rem;
     }
 
- 
+
     //call to action
     &__cta {
         position: absolute;
@@ -179,7 +181,7 @@
 }
 
 
-.mycards{
+.mycards {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;

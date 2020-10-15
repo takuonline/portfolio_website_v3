@@ -17,3 +17,15 @@ def about():
 @core_app.route("/contact")
 def contact():
     return render_template("contact.html")
+
+
+    #project portifolio
+
+@core_app.route("/natours")
+def natours():
+    return render_template("./website_portfolio/natours/index.html")
+
+
+@core_app.route("/trillo")
+def trillo():
+    return render_template("./website_portfolio/trillo/index.html")

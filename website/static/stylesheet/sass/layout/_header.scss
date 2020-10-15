@@ -8,6 +8,12 @@
       font-size: 1rem;
       
     }
+
+    &__line{
+      @include res(phone){
+        display: none;
+      }
+    }
   
   
     &__blob-blue{
