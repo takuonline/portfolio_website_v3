@@ -37,6 +37,16 @@
 
         display: flex;
         // padding: 15rem 7rem;
+
+        @include res(phone){
+flex-wrap: wrap;
+            width: 100%;
+            top: 47%;
+            left: 50%;
+            height: 40rem;
+        }
+    
+     
     }
 
     &__item{
@@ -47,10 +57,19 @@
         display: flex;
         justify-content: space-between;
         box-shadow: 0 2rem 4rem rgba( black, .2);
-      
+        padding: 2rem;
+        @include res(phone){
+            height: 45%;
+            margin: .1rem;
+            width: 100%;
+            padding: .3rem;
+                    }
         
             &--1{
-                padding: 2rem;
+                @include res(phone){
+                    height: 53%;
+                     
+                            }
                 &-header{
                     color: #55c57a;
                     font-weight: 700;
@@ -64,7 +83,13 @@
 
             
             &--2{
-                padding: 2rem;
+                @include res(phone){
+                    height: 40%;
+                     
+                            }
+                
+
+               
                 &-header{
                    
                     
@@ -133,6 +158,10 @@
             
             z-index: 1;
             color: $text-color;
+
+            @include res(phone){
+                right: 1.5rem;
+                        }
             
         }
 
@@ -141,5 +170,22 @@
         }
     }
 
+
+    @include res(phone){
+&__card{
+
+    }
+
+&__card-img{
+   display: none;
+}   
+
+&__card-body{
+font-size: 14px !important;
+}
+
+    }
+
+     
 
 }
