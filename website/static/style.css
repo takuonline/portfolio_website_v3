@@ -1154,7 +1154,7 @@ body {
   position: absolute;
   top: 2rem;
   right: 8rem;
-  opacity: 5%;
+  opacity: 30%;
   animation: blob 7s ease-in-out;
   animation-iteration-count: infinite;
   width: 72%; }
