@@ -10,6 +10,8 @@
     }
 
     &__line{
+animation: fade-in 3s ease-in-out;
+ background: white;
       @include res(phone){
         display: none;
       }
@@ -29,6 +31,7 @@
       overflow: hidden;
       background-size: 40%;
     }
+ 
   
   
   
