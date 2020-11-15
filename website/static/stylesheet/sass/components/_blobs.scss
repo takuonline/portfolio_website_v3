@@ -92,7 +92,6 @@
     }
 }
 
-
 .myblob{
     z-index: -5;
     position: absolute;
@@ -110,8 +109,9 @@
     @include res(phone){
         top: 11rem;
         right: 1rem;
-        opacity: 3%;
+        opacity: 0;
         width: 100%;
+
     }
 }
 

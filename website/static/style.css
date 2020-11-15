@@ -34,7 +34,8 @@ COMPONENTS
   line-height: 2rem; }
   @media (max-width: 26.5em) {
     .namebox {
-      font-size: 1rem; } }
+      font-size: 1rem;
+      width: 100%; } }
   .namebox__line {
     animation: fade-in 3s ease-in-out;
     background: white; }
@@ -1170,7 +1171,7 @@ body {
     .myblob {
       top: 11rem;
       right: 1rem;
-      opacity: 3%;
+      opacity: 0;
       width: 100%; } }
 
 .section-about__blob-blue {
