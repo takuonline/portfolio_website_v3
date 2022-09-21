@@ -92,16 +92,15 @@
     }
 }
 
-
 .myblob{
     z-index: -5;
     position: absolute;
-    top: 2rem;
-    right: 8rem;
-    opacity: 30%;
-    animation: blob 7s ease-in-out;
+    top: 1rem;
+    right: -5rem;
+    opacity: 100%;
+    animation: blob 7s ease-in-out; 
     animation-iteration-count: infinite;
-    width: 72%;
+    width: 70%;
     
     @include res(tab-port){
         top: 10rem;
@@ -110,8 +109,9 @@
     @include res(phone){
         top: 11rem;
         right: 1rem;
-        opacity: 3%;
+        opacity: 0;
         width: 100%;
+
     }
 }
 
